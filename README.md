@@ -1,7 +1,30 @@
-# merge_conflictForking a repository is really straightforward:
+# merge_conflict
+#include <iostream>
+using namespace std;
 
-1. Make sure you’re logged into GitHub with your account.
-2. Find the GitHub repository with which you’d like to work.
-3. Click the Fork button on the upper right-hand side of the
-repository’s page.
+int main() {
 
+	int n;
+	cout << "Enter n" << endl;
+	cin >> n;
+
+	int i = 1;
+	int val = 1;
+	while(i<=n){
+
+		int k = 1;
+		while (k<=n-i){
+			cout << " ";
+			k = k+1;
+		}
+		int j = 1;
+		while (j<=i){
+		cout << val;
+		j = j+1;
+		val = val+1;
+	}
+	cout << endl;
+	i = i +1;
+
+	}
+}
